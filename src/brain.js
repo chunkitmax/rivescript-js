@@ -567,7 +567,7 @@ class Brain {
 			let opts = [];
 			for (let j = 0, len = parts.length; j < len; j++) {
 				let p = parts[j];
-				opts.push(`(?:\\s|\\b)+${p}(?:\\s|\\b)+`);
+				opts.push(`(?:\\s|\\b)*${p}(?:\\s|\\b)*`);
 			}
 
 			// If this optional had a star or anything in it, make it non-matching.
